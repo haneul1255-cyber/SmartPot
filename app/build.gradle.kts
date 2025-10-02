@@ -6,6 +6,10 @@ android {
     namespace = "com.example.smartpot"
     compileSdk = 35
 
+    viewBinding{
+        enable = true
+    }
+
     defaultConfig {
         applicationId = "com.example.smartpot"
         minSdk = 21
