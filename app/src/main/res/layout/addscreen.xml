@@ -43,18 +43,24 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/allboder">
+                    android:background="@drawable/allboder"
+                    >
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_weight="1"
-                        android:src="@drawable/bluetoothicon">
+                        android:src="@drawable/bluetoothicon"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:clipToOutline="true"
+                        >
                     </ImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:text="연결"
+
                         />
                 </LinearLayout>
 
