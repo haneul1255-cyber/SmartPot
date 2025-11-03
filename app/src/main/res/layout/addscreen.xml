@@ -142,12 +142,22 @@
                 android:layout_marginLeft="25dp"
                 android:text="키우실 식물의 품종을 선택해주세요"/>
             <EditText
+                android:id="@+id/plant_search_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:inputType="textPersonName"
                 android:hint="  품종명을 검색해보세요(예 : 몬스테라, 다육식물)"
                 android:background="@drawable/edittext_rounded_corner_rectangle"
                 android:layout_margin="25dp" />
+
+            <!-- 식물 목록 RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/plant_list_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="25dp" />
 
         </LinearLayout>
 

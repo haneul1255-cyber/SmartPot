@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/plant_card_background"
+    android:padding="16dp"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="4dp">
+
+    <!-- 식물 이미지 -->
+    <ImageView
+        android:id="@+id/plant_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_clip_4dp"
+        android:clipToOutline="true"
+        android:src="@drawable/plant_item_background"
+        android:layout_marginEnd="16dp" />
+
+    <!-- 텍스트 정보 영역 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- 식물 이름 (한글) -->
+        <TextView
+            android:id="@+id/plant_name_korean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="몬스테라"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="4dp" />
+
+        <!-- 과학적 이름 -->
+        <TextView
+            android:id="@+id/plant_name_scientific"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monstera dilciousa"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:textColor="#666666"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 태그 및 물주기 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- 식물 종류 태그 -->
+            <TextView
+                android:id="@+id/plant_type_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="관엽식물"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/gray_rounded_bg"
+                android:layout_marginEnd="6dp" />
+
+            <!-- 난이도 태그 -->
+            <TextView
+                android:id="@+id/plant_difficulty_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="쉬움"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/green_rounded_bg"
+                android:layout_marginEnd="8dp" />
+
+            <!-- 물주기 빈도 -->
+            <TextView
+                android:id="@+id/watering_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7일마다 물주기"
+                android:textSize="14sp"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
