@@ -45,6 +45,7 @@
                     android:text="화분이름"
                     android:textSize="18dp"/>
                 <LinearLayout
+                    android:id="@+id/add_bluetooth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/allboder"
