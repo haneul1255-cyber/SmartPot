@@ -1,9 +1,7 @@
 package com.example.smartpot;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.RequiresPermission;
@@ -16,7 +14,6 @@ import connect_bluetooth.BluetoothTry;
 
 public class MainActivity extends AppCompatActivity {
     private BluetoothTry bluetoothManager;
-    LinearLayout mLinearLayout = findViewById(R.id.add_bluetooth);
     @RequiresPermission(Manifest.permission.BLUETOOTH_CONNECT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +26,5 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         bluetoothManager = new BluetoothTry(this);
-
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"})
-        LinearLayout addBluetooth = findViewById(R.id.add_bluetooth);
-        addBluetooth.setOnClickListener(v -> {
-            bluetoothManager.connectBluetooth("HC-06"); // 연결할 기기 이름
-        });
     }
 }
