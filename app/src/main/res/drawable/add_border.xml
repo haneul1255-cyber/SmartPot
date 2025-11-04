@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- 테두리선 -->
+    <stroke
+        android:width="2dp"
+        android:color="#c8c8c8"
+        android:dashWidth="6dp"
+        android:dashGap="4dp"/>
+
+    <!-- 모서리 둥글게 -->
+    <corners android:radius="25dp" />
+
+</shape>
